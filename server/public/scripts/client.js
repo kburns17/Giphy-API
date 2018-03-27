@@ -13,7 +13,7 @@ app.config(function($routeProvider){
             controller: 'RandomController as vm'
         }).otherwise({redirectTo: '/search'})
     
-})
+}) // end appConfig
 
 // app.controller('SearchController', ['$http', function($http){
 //     console.log('controller loaded');

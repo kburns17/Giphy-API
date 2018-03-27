@@ -3,27 +3,17 @@
 <head>
     <title>~API~</title>
     <script src="vendors/angular.min.js"></script>
+    <script src="vendors/angularRoute.js"></script>
     <script src="scripts/client.js"></script>
+    <script src="scripts/controllers/searchController.js"></script>
+    <script src="scripts/controllers/randomController.js"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body ng-app="GiphyApp">
+
   <h1>Angular And APIs!</h1>
-    <div ng-controller="SearchController as vm">
-        Search: <input type="text" ng-model="vm.newSearch.search" placeholder="Text Here">
-        <button ng-click="vm.getSearchInfo(vm.newSearch.search)">Search</button>
-        <div ng-repeat="item in vm.searchArray">
-        <img ng-src={{item.images.original.url}}>
-
-
-        </div>
-    </div>
-    <div ng-controller="RandomController as vm">
-        <button ng-click="vm.getRandomInfo()" >Random</button>
-        <div ng-repeat="piece in vm.randomArray">
-            <img src="{{piece.images.original.url}}">
-        </div>
-
-    </div>
+  <div ng-include=" '/views/templates/nav.html' ">
+  </div>
+    <main ng-view></main>
 </body>
 </html>
