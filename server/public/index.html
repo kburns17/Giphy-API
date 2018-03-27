@@ -10,8 +10,13 @@
 <body ng-app="GiphyApp">
   <h1>Angular And APIs!</h1>
     <div ng-controller="SearchController as vm">
-        Search: <input type="text" ng-model="vm.newSearch.search">
-        <button ng-model="vm.getSearchInfo(vm.newSearch)">Search</button>
+        Search: <input type="text" ng-model="vm.newSearch.search" placeholder="Text Here">
+        <button ng-click="vm.getSearchInfo(vm.newSearch.search)">Search</button>
+        <div ng-repeat="item in vm.searchArray">
+        <img ng-src={{item.images.original.url}}>
+
+
+        </div>
     </div>
 </body>
 </html>
