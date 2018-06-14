@@ -1,6 +1,6 @@
   <div class="center">
         Search: <input type="text" ng-model="vm.newSearch.search" placeholder="Text Here">
-        <button ng-click="vm.getSearchInfo(vm.newSearch.search)">Search</button>
+        <button class="button" ng-click="vm.getSearchInfo(vm.newSearch.search)">Search</button>
         <br><br/>
         <div  ng-repeat="item in vm.searchArray">
         <img class="search" ng-src={{item.images.original.url}} >
