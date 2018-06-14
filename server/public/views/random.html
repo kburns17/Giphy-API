@@ -1,6 +1,6 @@
-<div>
+<div class="centerText">
         <button ng-click="vm.getRandomInfo()" >Random</button>
-        <div ng-repeat="piece in vm.randomArray">
-            <img src="{{piece.images.original.url}}">
+        <div ng-repeat="item in vm.randomArray">
+            <img ng-src="{{item.images.original.url}}">
         </div>
     </div>
