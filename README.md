@@ -1,21 +1,11 @@
 # Giphy API
 
-Let's use the Giphy API and use Angular's `$http` service to create a fun application. **Fork** the provided repository. Before you get started, you'll need to read through the [Giphy documentation](https://developers.giphy.com/) to determine which endpoints you need to complete this app. You will also need to register an account in order to get your `API Key`. This key is used for all of your requests to authenticate your app to Giphy.
+This application taps into the giphy developer API. You can search for a specific gif and you will get 25 results. You can also choose random and it will select a random gif for you. 
 
-### Base Mode
-Setup!
-You will need to make the front end app from scratch. 
--- Bring in angular, make your app, and connect it to your html file. 
--- Create 2 separate controllers in your Angular app, one for search and one for the random. Connect them to your html file.
+# To use the app
 
-Once you've got your app set up:
-There should be two sections to your page -- one for search functionality and one for random functionality. Each section should have its own controller.
-In each controller's corresponding view, create usable forms with inputs that use the `/search` and `/random` in the Giphy API.
-For random, allow users to get a random giphy by clicking a *RANDOM* button.
-For search, allow users to input text and click a *SEARCH* button.
-After a successful response, you should display the image(s) to your user!
+1. Start by typing "NPM Install" in your terminal to get dependencies installed.
+2. Type "NPM start" in the terminal to start the server
+3. Navigate to local host 3000 in order to use the app.
 
-### HARD Mode
-`/Search` results in Giphy have a `Pagination` Object -- Let's use this!
-Add Previous and Next buttons for the search results. Clicking previous and next should show us different images, corresponding to the pagination information. You will need to read and understand what Pagination is telling you, and how to add it to your request!
 
